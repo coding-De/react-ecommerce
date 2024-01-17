@@ -12,7 +12,6 @@ import {
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
 import Modal from '../common/Modal';
-import { useAlert } from 'react-alert';
 
 function ProductForm() {
   const {
@@ -28,7 +27,6 @@ function ProductForm() {
   const params = useParams();
   const selectedProduct = useSelector(selectProductById);
   const [openModal, setOpenModal] = useState(null);
-  // const alert = useAlert();
 
   const colors = [
     {
