@@ -7,6 +7,11 @@ function Protected({ children }) {
 
   if (!user) {
     return <Navigate to="/login" replace={true}></Navigate>;
+  }else{
+    <>
+    <div>{children}</div>
+    <h2>hello</h2>
+    </>
   }
   return children;
 }
